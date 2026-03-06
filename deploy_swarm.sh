@@ -12,7 +12,7 @@
 set -e
 
 # --- Config ---
-REPO="https://github.com/LenoxSaintGermain/orbital-system.git"
+REPO="https://github.com/LenoxSaintGermain/third-signal-swarm.git"
 CLONE_DIR="/tmp/orbital-system-deploy"
 OPENCLAW_ROOT="$HOME/.openclaw"
 SWARM_DEST="$OPENCLAW_ROOT/workspaces/third-signal-swarm"
