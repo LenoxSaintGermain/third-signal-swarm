@@ -1,61 +1,163 @@
 {
-  // Third Signal Swarm Configuration
   "agents": {
     "defaults": {
       "model": {
         "primary": "anthropic/claude-3-opus-20240229",
-        "fallbacks": ["openai/gpt-4o"]
+        "fallbacks": [
+          "openai/gpt-4o"
+        ]
       },
       "userTimezone": "America/New_York"
     },
     "list": [
-      // --- Engineering Team ---
-      { "id": "frontend-developer", "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/engineering/frontend-developer" },
-      { "id": "backend-architect", "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/engineering/backend-architect" },
-      { "id": "mobile-app-builder", "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/engineering/mobile-app-builder" },
-      { "id": "ai-engineer", "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/engineering/ai-engineer" },
-      { "id": "devops-automator", "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/engineering/devops-automator" },
-      { "id": "rapid-prototyper", "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/engineering/rapid-prototyper" },
-
-      // --- Product Team ---
-      { "id": "trend-researcher", "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/product/trend-researcher" },
-      { "id": "feedback-synthesizer", "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/product/feedback-synthesizer" },
-      { "id": "sprint-prioritizer", "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/product/sprint-prioritizer" },
-
-      // --- Marketing Team ---
-      { "id": "tiktok-strategist", "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/marketing/tiktok-strategist" },
-      { "id": "instagram-curator", "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/marketing/instagram-curator" },
-      { "id": "twitter-engager", "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/marketing/twitter-engager" },
-      { "id": "reddit-community-builder", "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/marketing/reddit-community-builder" },
-      { "id": "app-store-optimizer", "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/marketing/app-store-optimizer" },
-      { "id": "content-creator", "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/marketing/content-creator" },
-      { "id": "growth-hacker", "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/marketing/growth-hacker" },
-
-      // --- Design Team ---
-      { "id": "ui-designer", "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/design/ui-designer" },
-      { "id": "ux-researcher", "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/design/ux-researcher" },
-      { "id": "brand-guardian", "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/design/brand-guardian" },
-      { "id": "visual-storyteller", "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/design/visual-storyteller" },
-      { "id": "whimsy-injector", "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/design/whimsy-injector" },
-
-      // --- Project Management ---
-      { "id": "experiment-tracker", "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/project-management/experiment-tracker" },
-      { "id": "project-shipper", "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/project-management/project-shipper" },
-      { "id": "studio-producer", "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/project-management/studio-producer" },
-
-      // --- Studio Operations ---
-      { "id": "support-responder", "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/studio-operations/support-responder" },
-      { "id": "analytics-reporter", "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/studio-operations/analytics-reporter" },
-      { "id": "infrastructure-maintainer", "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/studio-operations/infrastructure-maintainer" },
-      { "id": "legal-compliance-checker", "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/studio-operations/legal-compliance-checker" },
-      { "id": "finance-tracker", "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/studio-operations/finance-tracker" },
-
-      // --- Testing ---
-      { "id": "tool-evaluator", "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/testing/tool-evaluator" },
-      { "id": "api-tester", "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/testing/api-tester" },
-      { "id": "workflow-optimizer", "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/testing/workflow-optimizer" },
-      { "id": "performance-benchmarker", "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/testing/performance-benchmarker" },
-      { "id": "test-results-analyzer", "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/testing/test-results-analyzer" }
+      {
+        "id": "frontend-developer",
+        "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/engineering/frontend-developer"
+      },
+      {
+        "id": "backend-architect",
+        "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/engineering/backend-architect"
+      },
+      {
+        "id": "mobile-app-builder",
+        "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/engineering/mobile-app-builder"
+      },
+      {
+        "id": "ai-engineer",
+        "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/engineering/ai-engineer"
+      },
+      {
+        "id": "devops-automator",
+        "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/engineering/devops-automator"
+      },
+      {
+        "id": "rapid-prototyper",
+        "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/engineering/rapid-prototyper"
+      },
+      {
+        "id": "trend-researcher",
+        "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/product/trend-researcher"
+      },
+      {
+        "id": "feedback-synthesizer",
+        "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/product/feedback-synthesizer"
+      },
+      {
+        "id": "sprint-prioritizer",
+        "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/product/sprint-prioritizer"
+      },
+      {
+        "id": "tiktok-strategist",
+        "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/marketing/tiktok-strategist"
+      },
+      {
+        "id": "instagram-curator",
+        "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/marketing/instagram-curator"
+      },
+      {
+        "id": "twitter-engager",
+        "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/marketing/twitter-engager"
+      },
+      {
+        "id": "reddit-community-builder",
+        "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/marketing/reddit-community-builder"
+      },
+      {
+        "id": "app-store-optimizer",
+        "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/marketing/app-store-optimizer"
+      },
+      {
+        "id": "content-creator",
+        "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/marketing/content-creator"
+      },
+      {
+        "id": "growth-hacker",
+        "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/marketing/growth-hacker"
+      },
+      {
+        "id": "ui-designer",
+        "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/design/ui-designer"
+      },
+      {
+        "id": "ux-researcher",
+        "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/design/ux-researcher"
+      },
+      {
+        "id": "brand-guardian",
+        "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/design/brand-guardian"
+      },
+      {
+        "id": "visual-storyteller",
+        "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/design/visual-storyteller"
+      },
+      {
+        "id": "whimsy-injector",
+        "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/design/whimsy-injector"
+      },
+      {
+        "id": "experiment-tracker",
+        "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/project-management/experiment-tracker"
+      },
+      {
+        "id": "project-shipper",
+        "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/project-management/project-shipper"
+      },
+      {
+        "id": "studio-producer",
+        "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/project-management/studio-producer"
+      },
+      {
+        "id": "support-responder",
+        "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/studio-operations/support-responder"
+      },
+      {
+        "id": "analytics-reporter",
+        "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/studio-operations/analytics-reporter"
+      },
+      {
+        "id": "infrastructure-maintainer",
+        "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/studio-operations/infrastructure-maintainer"
+      },
+      {
+        "id": "legal-compliance-checker",
+        "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/studio-operations/legal-compliance-checker"
+      },
+      {
+        "id": "finance-tracker",
+        "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/studio-operations/finance-tracker"
+      },
+      {
+        "id": "tool-evaluator",
+        "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/testing/tool-evaluator"
+      },
+      {
+        "id": "api-tester",
+        "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/testing/api-tester"
+      },
+      {
+        "id": "workflow-optimizer",
+        "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/testing/workflow-optimizer"
+      },
+      {
+        "id": "performance-benchmarker",
+        "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/testing/performance-benchmarker"
+      },
+      {
+        "id": "test-results-analyzer",
+        "workspace": "/home/ubuntu/.openclaw/workspaces/third-signal-swarm/agents/testing/test-results-analyzer"
+      },
+      {
+        "id": "context-router",
+        "workspace": "agents/integration/context-router",
+        "team": "integration",
+        "description": "Central nervous system for incoming OMI Glass data. Fuses text and vision context and routes to specialist agents."
+      },
+      {
+        "id": "vision-claw-agent",
+        "workspace": "agents/integration/vision-claw-agent",
+        "team": "integration",
+        "description": "The swarm eyes. Uses vision-language models to analyze image frames from OMI Glass and produce structured scene descriptions."
+      }
     ]
   }
 }
